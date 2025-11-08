@@ -1,60 +1,36 @@
-# yhds-vps-full
-# 🧠 YHDS VPS Full Installer
+# YHDS VPS Full Menu
 
-Installer lengkap untuk server Debian/Ubuntu — mencakup **SSH, WebSocket, Trojan, V2Ray, dan UDP-Custom (port 1–65535)** dengan menu interaktif, auto-update, dan perlindungan firewall otomatis.
+Skrip ini menyediakan menu VPS lengkap dengan:
 
----
-
-## ⚙️ Fitur Utama
-✅ Instalasi otomatis semua dependency  
-✅ UDP-Custom aktif di semua port (1–65535)  
-✅ Menu interaktif 1–13  
-✅ Auto update binary UDP-Custom  
-✅ Bisa test port UDP aktif  
-✅ Firewall dasar (UFW) otomatis aktif  
-✅ Aman — tidak reboot otomatis  
-✅ Kompatibel di VPS arsitektur **x86_64 (AMD64)**  
+- SSH, UDP-Custom, WS, Trojan, V2Ray  
+- UDP-Custom port 1–65535  
+- Auto-install dependencies  
+- Bisa dijalankan dengan perintah `menu`  
+- Bisa dijalankan di screen  
 
 ---
 
-## 🧩 Kompatibilitas
-- Debian 10 / 11 / 12  
-- Ubuntu 20.04 / 22.04  
-- Arsitektur: **x86_64 (AMD64)**  
+## Cara Install
 
----
-
-## 🚀 Cara Install
-Salin dan jalankan perintah di bawah ini pada VPS baru kamu 👇
-
-# 🧠 YHDS VPS Full Installer
-
-Installer lengkap untuk VPS Debian/Ubuntu — mencakup **SSH, WebSocket, Trojan, V2Ray, dan UDP-Custom (port 1–65535)** dengan menu interaktif, auto-update, dan perlindungan firewall otomatis.
-
----
-
-## ⚙️ Fitur Utama
-✅ Instalasi otomatis semua dependency  
-✅ UDP-Custom aktif di semua port (1–65535)  
-✅ Menu interaktif 1–13  
-✅ Auto update binary UDP-Custom  
-✅ Bisa test port UDP aktif  
-✅ Firewall dasar (UFW) otomatis aktif  
-✅ Aman tanpa auto reboot  
-✅ Kompatibel di VPS arsitektur **x86_64 (AMD64)**  
-
----
-
-## 🧩 Kompatibilitas
-- Debian 10 / 11 / 12  
-- Ubuntu 20.04 / 22.04  
-- Arsitektur: **x86_64 (AMD64)**  
-
----
-
-## 🚀 Cara Install
-
-Salin dan jalankan perintah di bawah ini pada VPS baru:
+1. Login ke VPS sebagai root
+2. Download skrip menu:
 
 ```bash
-bash -c "$(wget -qO- https://raw.githubusercontent.com/Yahdiad1/yhds-vps-full/main/install_vps_full_auto.sh)"
+wget -O /usr/local/bin/menu https://raw.githubusercontent.com/YYahdiad1/yhds-vps-full/main/menu
+chmod +x /usr/local/bin/menu
+
+##- Bisa dijalankan dengan perintah `menu`  
+- Bisa dijalankan di screen
+
+3. Jalankan menu:
+
+
+
+menu
+
+4. (Opsional) Jalankan di screen agar tetap hidup:
+
+
+
+screen -dmS yhds-menu menu
+screen -r yhds-menu
