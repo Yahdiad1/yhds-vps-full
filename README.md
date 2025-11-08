@@ -19,18 +19,6 @@ Skrip ini menyediakan menu VPS lengkap dengan:
 wget -O /usr/local/bin/menu https://raw.githubusercontent.com/YYahdiad1/yhds-vps-full/main/menu
 chmod +x /usr/local/bin/menu
 
-##- Bisa dijalankan dengan perintah `menu`  
-- Bisa dijalankan di screen
-
-3. Jalankan menu:
-
-
-
-menu
-
-4. (Opsional) Jalankan di screen agar tetap hidup:
-
-
 
 screen -dmS yhds-menu menu
 screen -r yhds-menu
