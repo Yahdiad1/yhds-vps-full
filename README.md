@@ -16,9 +16,6 @@ Skrip ini menyediakan menu VPS lengkap dengan:
 2. Download skrip menu:
 
 ```bash
-wget -O /usr/local/bin/menu https://raw.githubusercontent.com/YYahdiad1/yhds-vps-full/main/menu
+wget -O /usr/local/bin/menu https://github.com/Yahdiad1/yhds-vps-full/raw/main/menu
 chmod +x /usr/local/bin/menu
-
-
-screen -dmS yhds-menu menu
-screen -r yhds-menu
+menu
